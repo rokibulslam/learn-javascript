@@ -12,21 +12,38 @@ console.log("👥 Friends Search")
 // Expectation
 //
 // Input: "Budi"
+//
 // Output:
-// - "Budi" found!
-// - "Budi" is found in order 5
+// Reymond is found in order 1
+// Budi is found in order 6
+// Joko is not found
+// 100 is not found
 
 // Process
 
 const friends = ["Reymond", "Haidar", "Julio", "Hanif", "Adi", "Budi", "Calvin", "Doni"]
 
-const nameToSearch = "Budi"
+function searchName(nameToSearch) {
+  let isFound = false
+  let foundInOrder = null
 
-for (let index = 0; index < friends.length; index++) {
-  const currentFriend = friends[index]
+  for (let index = 0; index < friends.length; index++) {
+    const currentFriend = friends[index]
+    if (nameToSearch === currentFriend) {
+      isFound = true
+      foundInOrder = index + 1
+      break;
+    }
+  }
 
-  if (nameToSearch === currentFriend) {
-    console.log(`${nameToSearch} found in order ${index + 1}`)
-    break;
+  if (isFound) {
+    console.log(`${nameToSearch} is found in order ${foundInOrder}`)
+  } else {
+    console.log(`${nameToSearch} is not found`)
   }
 }
+
+searchName("Reymond")
+searchName("Budi")
+searchName("Joko")
+searchName(100)
