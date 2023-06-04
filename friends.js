@@ -1,4 +1,4 @@
-// Aplikasi teman menggunakan tipe data Array //
+// Aplikasi teman menggunakan tipe data Array
 const friends = ["Reymond", "Haidar", "Julio", "Hanif", "Calvin"];
 
 // Menampilkan huruf pertama dari nama pertama dalam sebuah array
@@ -8,23 +8,23 @@ console.log(friends[0][0]);
 friends.push("Luis");
 console.log(friends);
 
-// // Menghapus 1 value diakhir dalam sebuah array
+// Pop or delete 1 last value in the array
 friends.pop();
 console.log(friends);
 
-// // Menambahkan 1 value diawal dalam sebuah array
+// Menambahkan 1 value diawal dalam sebuah array
 friends.unshift("Luis");
 console.log(friends);
 
-// // Menghapus 1 value diawal dalam sebuah array
+// Menghapus 1 value diawal dalam sebuah array
 friends.shift();
 console.log(friends);
 
-// // Mengecek daftar nama didalam sebuah array
+// Mengecek daftar nama didalam sebuah array
 friends.includes("Reymond");
 console.log(friends);
 
-// // Mencari letak sebuah item dalam sebuah array
+// Mencari letak sebuah item dalam sebuah array
 friends.indexOf("Julio");
 console.log(friends);
 
