@@ -1,7 +1,7 @@
 // Aplikasi teman menggunakan tipe data Array //
 const friends = ["Reymond", "Haidar", "Julio", "Hanif", "Calvin"];
 
-// Menampilkan huruf pertama dalam sebuah array
+// Menampilkan huruf pertama dari nama pertama dalam sebuah array
 console.log(friends[0][0]);
 
 // Menambahkan 1 value diakhir dalam sebuah array
@@ -34,8 +34,16 @@ for (let index = 0; index < 5; index++) {
   console.log(number + ". " + friends[index]);
 }
 
-// Menampilan semua nama kedalam console dimulai dari value terakhir
-for (let index = 0; index < 5; index++) {
+console.log("---");
+
+// Menampilan semua nama dimulai dari nama terakhir
+for (let index = 4; index >= 0; index--) {
   const number = index + 1;
-  console.log(number + ". " + friends.reverse()[index]);
+  console.log(number + ". " + friends[index]);
 }
+// Output
+// 5. Calvin
+// 4. Haidar
+// 3. Julio
+// 2. Haidar
+// 1. Reymond
