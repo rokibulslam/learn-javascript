@@ -63,15 +63,15 @@ console.log("😺 Animals Search");
 
 const animals = ["Tiger", "Rabbit", "Dog", "Cat", "Rat", "Horse", "Bear", "Lion", "Snake", "Panda"];
 
-function searchAnimalsName(animalsNameToSearch) {
+function searchAnimalName(keyword) {
   for (let index = 0; index < animals.length; index++) {
-    currentAnimals = animals[index];
-    if (animalsNameToSearch === currentAnimals) {
-      console.log(animalsNameToSearch + " is found in order " + +(index + 1));
+    currentAnimal = animals[index];
+    if (keyword === currentAnimal) {
+      console.log(keyword + " is found in order " + +(index + 1));
       break;
     }
   }
 }
 
-searchAnimalsName("Rabbit");
-searchAnimalsName("Cat");
+searchAnimalName("Rabbit");
+searchAnimalName("Cat");
