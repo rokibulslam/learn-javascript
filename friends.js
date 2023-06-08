@@ -1,49 +1,78 @@
-// Aplikasi teman menggunakan tipe data Array
-const friends = ["Reymond", "Haidar", "Julio", "Hanif", "Calvin"];
+// Friends app
+console.log("👥 Friends Search");
 
-// Menampilkan huruf pertama dari nama pertama dalam sebuah array
-console.log(friends[0][0]);
+// Algorithm / Flow
+//
+// Tentukan nama teman yang ingin dicari
+// Dari daftar teman, kita cari dengan cek satu-satu
+// Setiap lagi ngecek satu nama teman, cocokkan apakah sesuai dengan nama teman yang kita cari
+// Jika namanya cocok, maka berhenti mencari
+// Jika namanya gak cocok, maka lanjut terus
+// Jika sudah berhenti mencari, tampilkan bahwa namanya telah ditemukan
 
-// Menambahkan 1 value diakhir dalam sebuah array
-friends.push("Luis");
-console.log(friends);
+// Expectation
+//
+// Input: "Calvin"
+//
+// Output:
+// Calvin is found in order 7
+// Julio is found in order 3
 
-// Pop or delete 1 last value in the array
-friends.pop();
-console.log(friends);
+// Process
 
-// Menambahkan 1 value diawal dalam sebuah array
-friends.unshift("Luis");
-console.log(friends);
+const friends = ["Reymond", "Haidar", "Julio", "Hanif", "Adi", "Budi", "Calvin", "Doni"];
 
-// Menghapus 1 value diawal dalam sebuah array
-friends.shift();
-console.log(friends);
+function searchName(nameToSearch) {
+  for (let index = 0; index < friends.length; index++) {
+    const currentFriend = friends[index];
+    if (nameToSearch === currentFriend) {
+      console.log(nameToSearch + " is found in order" + " " + (index + 1));
+      break;
+    } else {
+      continue;
+    }
+  }
+}
+searchName("Calvin");
+searchName("Julio");
 
-// Mengecek daftar nama didalam sebuah array
-friends.includes("Reymond");
-console.log(friends);
+console.log("----------------");
 
-// Mencari letak sebuah item dalam sebuah array
-friends.indexOf("Julio");
-console.log(friends);
+// Animals app
 
-// Menampilkan semua nama kedalam console menggunakan for loop
-for (let index = 0; index < 5; index++) {
-  const number = index + 1;
-  console.log(number + ". " + friends[index]);
+console.log("😺 Animals Search");
+
+// Algorithm / Flow
+//
+// Tentukan nama hewan yang ingin dicari
+// Dari daftar hewan, kita cari dengan cek satu-satu
+// Setiap lagi ngecek satu nama hewan, cocokkan apakah sesuai dengan nama hewan yang kita cari
+// Jika namanya cocok, maka berhenti mencari
+// Jika namanya gak cocok, maka lanjut terus
+// Jika sudah berhenti mencari, tampilkan bahwa namanya telah ditemukan
+
+// Expectation
+//
+// Input: "Lion"
+//
+// Output:
+// User memasukkan input didalam variabel animals lalu akan menampilkan nama binatang dan ditemukan sesuai urutannya
+// Lion is found in order 8
+// Cat is found in order 4
+
+// Process
+
+const animals = ["Tiger", "Rabbit", "Dog", "Cat", "Rat", "Horse", "Bear", "Lion", "Snake", "Panda"];
+
+function searchAnimalsName(animalsNameToSearch) {
+  for (let index = 0; index < animals.length; index++) {
+    currentAnimals = animals[index];
+    if (animalsNameToSearch === currentAnimals) {
+      console.log(animalsNameToSearch + " is found in order " + +(index + 1));
+      break;
+    }
+  }
 }
 
-console.log("---");
-
-// Menampilan semua nama dimulai dari nama terakhir
-for (let index = 4; index >= 0; index--) {
-  const number = index + 1;
-  console.log(number + ". " + friends[index]);
-}
-// Output
-// 5. Calvin
-// 4. Haidar
-// 3. Julio
-// 2. Haidar
-// 1. Reymond
+searchAnimalsName("Rabbit");
+searchAnimalsName("Cat");
