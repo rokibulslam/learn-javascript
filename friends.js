@@ -56,7 +56,6 @@ console.log("😺 Animals Search");
 // Input: "Lion"
 //
 // Output:
-// User memasukkan input didalam variabel animals lalu akan menampilkan nama binatang dan ditemukan sesuai urutannya
 // Lion is found in order 8
 // Cat is found in order 4
 
