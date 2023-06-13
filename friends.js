@@ -20,11 +20,11 @@ console.log("👥 Friends Search");
 
 // Process
 
-const friends = ["Reymond", "Haidar", "Julio", "Hanif", "Adi", "Budi", "Calvin", "Doni"];
+const numbers = ["Reymond", "Haidar", "Julio", "Hanif", "Adi", "Budi", "Calvin", "Doni"];
 
 function searchName(nameToSearch) {
-  for (let index = 0; index < friends.length; index++) {
-    const currentFriend = friends[index];
+  for (let index = 0; index < numbers.length; index++) {
+    const currentFriend = numbers[index];
     if (nameToSearch === currentFriend) {
       console.log(nameToSearch + " is found in order" + " " + (index + 1));
       break;
