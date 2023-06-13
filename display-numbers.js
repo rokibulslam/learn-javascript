@@ -1,6 +1,5 @@
 // Given a array of numbers
-// const numbers = [1,2,3,4,5,6,7,8,9,10];
-// Display the numbers with these format use for loop and if else with old function javascript:
+// Display the numbers with these format:
 // 1
 // 5
 // 2 and 8
