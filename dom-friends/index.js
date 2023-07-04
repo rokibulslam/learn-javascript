@@ -11,7 +11,12 @@ const friends = [
 friends.forEach((friend) => {
   const friendElement = document.createElement("li"); // LI
 
-  friendElement.innerHTML = friend.name;
+  friendElement.classList = `bg-slate-200 rounded p-2`;
+
+  friendElement.innerHTML = `
+    <h3 class="text-xl">${friend.name}</h3>
+    <p class="text-slate-400">${friend.age} years old</p>
+  `;
 
   friendsElement.appendChild(friendElement);
 });
