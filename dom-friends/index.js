@@ -1,3 +1,5 @@
+const friendsElement = document.getElementById("friends"); // UL
+
 const friends = [
   { name: "Reymond J", age: 26 },
   { name: "Haidar H", age: 30 },
@@ -7,5 +9,9 @@ const friends = [
 ];
 
 friends.forEach((friend) => {
-  console.log(friend);
+  const friendElement = document.createElement("li"); // LI
+
+  friendElement.innerHTML = friend.name;
+
+  friendsElement.appendChild(friendElement);
 });
