@@ -1,5 +1,3 @@
-const friendsElement = document.getElementById("friends"); // UL
-
 const friends = [
   { name: "Reymond J", age: 26 },
   { name: "Haidar H", age: 30 },
@@ -7,6 +5,8 @@ const friends = [
   { name: "Budi", age: 35 },
   { name: "Joko", age: 40 },
 ];
+
+const friendsElement = document.getElementById("friends"); // UL
 
 friends.forEach((friend) => {
   const friendElement = document.createElement("li"); // LI
