@@ -25,7 +25,7 @@ const animals = ["Tiger", "Rabbit", "Dog", "Cat", "Rat", "Horse", "Bear", "Lion"
 
 function searchAnimalName(keyword) {
   for (let index = 0; index < animals.length; index++) {
-    currentAnimal = animals[index];
+    const currentAnimal = animals[index];
     if (keyword === currentAnimal) {
       console.log(keyword + " is found in order " + +(index + 1));
       break;
@@ -33,5 +33,5 @@ function searchAnimalName(keyword) {
   }
 }
 
-searchAnimalName("Rabbit");
+searchAnimalName("Tiger");
 searchAnimalName("Cat");
